@@ -20,9 +20,9 @@ body {
   color: var(--light);
   margin: 30px 40px;
 }
-.name h1 {
+ .name h1 {
   color: var(--red-text);
-  font-weight: 700;
+  font-weight: 700;  
 }
 .anker a{
   text-decoration: none;
@@ -38,17 +38,16 @@ body {
  width: 35%;
  display: flex;
  justify-content: space-between;
-}
-nav {
+ }  
+   nav {
   display: flex;
   justify-content: space-between;
-  
-    position: sticky;
-    top: 0; /* Stick the navbar to the top of the viewport */
+   /* position: sticky;
+    top: 0; 
     z-index: 100; 
-    padding: 10px;
+    padding: 10px; */
     }
-  
+     
 .middle {
   display: flex;
   justify-content: space-between;
@@ -64,8 +63,8 @@ nav {
 .left-content h1 {
   font-size: 40px;
   font-weight: bold;
-}
-.left-content a {
+} 
+ .left-content a {
    background-color: var(--red);
    text-decoration: none;
    padding: 5px 10px;
@@ -88,6 +87,7 @@ nav {
 .xyz {
   color: var(--light);
 }
+
 /*------------- Skills-----------*/
 .skills h1{
   display: inline-block;
