@@ -1,5 +1,4 @@
 import React from 'react'
-//import img1 from "../photo02.jpg"
 
 const Header = () => {
   return (
