@@ -11,7 +11,7 @@ const Header = () => {
           <a href="#home" rel="noreferrer">Home</a>
           <a href="#skills" rel="noreferrer">Skills</a>
           <a href="https://docs.google.com/document/d/1xoP58kh4KgN3QjUD51FBTp9E6JacIxBv4xNauWckqGc/edit?usp=sharing" target='_blank' rel="noreferrer">Resume</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact" rel="noreferrer>Contact</a>
         </div>
       </nav>
       <section className='middle' id='home'>
