@@ -76,8 +76,8 @@ const Projects = () => {
     <li>Customized the UI to maintain the core functionalities.</li>
   </ul>
   <div className="btn-all">
-  <a href="https://github.com/rahul4328/Podcast-App" target='blank'><button>Code</button></a>
-    <a href="https://podcast-rahul-ranjan.netlify.app/" target="_blank">
+  <a href="https://github.com/rahul4328/Podcast-App" target='blank' rel="noreferrer"><button>Code</button></a>
+    <a href="https://podcast-rahul-ranjan.netlify.app/" target="_blank" rel="noreferrer">
   <button>Live Project</button>
 </a>
 </div>
@@ -159,8 +159,8 @@ const Projects = () => {
     <li>Integrated with a movie API to fetch real-time movie data.</li>
   </ul>
   <div className="btn-all">
-  <a href="https://splendorous-panda-0ac639.netlify.app/" target='blank'><button>Code</button></a>
-    <a href="https://splendorous-panda-0ac639.netlify.app/" target="_blank">
+  <a href="https://splendorous-panda-0ac639.netlify.app/" target='_blank' rel="noreferrer"><button>Code</button></a>
+    <a href="https://splendorous-panda-0ac639.netlify.app/" target="_blank" rel="noreferrer">
   <button>Live Project</button>
 </a>
 </div>

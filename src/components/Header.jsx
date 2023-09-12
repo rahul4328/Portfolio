@@ -8,9 +8,9 @@ const Header = () => {
           <h1>Rahul Ranjan</h1>
         </div>
         <div className='anker'>
-          <a href="#home">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="https://docs.google.com/document/d/1xoP58kh4KgN3QjUD51FBTp9E6JacIxBv4xNauWckqGc/edit?usp=sharing" target='_blank'>Resume</a>
+          <a href="#home" rel="noreferrer">Home</a>
+          <a href="#skills" rel="noreferrer">Skills</a>
+          <a href="https://docs.google.com/document/d/1xoP58kh4KgN3QjUD51FBTp9E6JacIxBv4xNauWckqGc/edit?usp=sharing" target='_blank' rel="noreferrer">Resume</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -22,7 +22,7 @@ const Header = () => {
 with a team, and contribute to delivering high-quality products that meet end-user needs. With a strong attention to detail
 and a focus on delivering engaging user experiences, I am committed to excellence in front-end development.</p>
               
-              <a href="#project">Projects</a>
+              <a href="#project" rel="noreferrer">Projects</a>
               
         </div>
         <div>
