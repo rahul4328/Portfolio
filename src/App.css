@@ -1,38 +1,281 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --red : #cd3128;
+    --red-dark : #ab261f;
+    --red-text  : #ef403f;
+    --dark-light: #181818;
+  --dark: #111;
+  --light: #ffffff
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  margin: 30px 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.name h1 {
+  color: var(--red-text);
+  font-weight: 700;
+}
+.anker a{
+  text-decoration: none;
+  color: var(--light);
+  font-weight: bold;
+}
+.anker a:hover{
+  color: var(--red);
+  transform: scale(1.2);
+  margin-top: 2px;
+}
+.anker {
+ width: 35%;
+ display: flex;
+ justify-content: space-between;
+}
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  
+    position: sticky;
+    top: 0; /* Stick the navbar to the top of the viewport */
+    z-index: 100; 
+    padding: 10px;
+    }
+  
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.img1 {
+ margin: 60px 80px;
+  border-radius: 50%;
+  width: 260px;
+}
+.left-content {
+  margin: 60px 80px;
+}
+.left-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.left-content a {
+   background-color: var(--red);
+   text-decoration: none;
+   padding: 5px 10px;
+   font-size: 18px;
+   font-weight: bold;
+   color: var(--light);
+   border-radius: 6px;
+   border: 1px solid var(--red-dark);
+}
+.left-content a:hover{
+  background-color: var(--red-dark);
+}
+.left-content h2 {
+  padding-top: 10px;
+  color: var(--red-text);
+}
+.left-content p {
+  margin-bottom: 16px;
+}
+.xyz {
+  color: var(--light);
+}
+/*------------- Skills-----------*/
+.skills h1{
+  display: inline-block;
+  font-size: 60px;
+  margin-left: 42%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  border: 2px solid rgb(76, 107, 76);
+  padding: 10px;
+  border-radius: 10px 30px;
+  background-color: rgb(26, 32, 26);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background: linear-gradient(25deg, #ccc 5%, transparent 15%);
+}
+.icon-all{
+  margin: 30px 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-col-1,
+.icon-col-2,
+.icon-col-3 {
+ display: flex;
+ justify-content: space-between;
+}
+.icon-col-2,
+.icon-col-3 {
+  margin-top: 20px;
+}
+.icon-col-1 h3,
+.icon-col-2 h3,
+.icon-col-3 h3 {
+  text-align: center;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width: 768px) {
+  /* CSS rules for smaller screens */
+  .name {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .anker {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .middle {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .left-content {
+    margin-top: 20px;
+  }
+  .img1 {
+    width: 80%;
   }
 }
+
+
+/* Header media */
+@media (max-width: 768px) {
+  /* CSS rules for smaller screens */
+  .name {
+    display: none; /* Hide the .name div, which contains the <h1> element */
+  }
+  .anker {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .anker a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--red); /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .middle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .left-content {
+    margin-top: 20px;
+  }
+  .img1 {
+    width: 80%;
+  }
+}
+
+/* slills media */
+@media (max-width: 768px) {
+  /* CSS rules for smaller screens */
+  .icon-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .icon-col-1, .icon-col-2, .icon-col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .icon-col-1 div,
+  .icon-col-2 div,
+  .icon-col-3 div {
+    margin-bottom: 10px;
+  }
+  .icon-col-3 {
+    margin-bottom: 0;
+  }
+  .fa-10x {
+    font-size: 5rem; /* Adjust the icon size as needed */
+  }
+  h3 {
+    font-size: 1.5rem; /* Adjust the heading size as needed */
+  }
+  h2 {
+    font-size: 1.8rem; /* Adjust the heading size as needed */
+  }
+}
+
+/* projects */
+.head-project p{
+  color: rgb(138, 138, 212);
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 45%;
+}
+
+.head-project h1 {
+  display: inline-block;
+  font-size: 60px;
+  margin-left: 28%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  border: 2px solid rgb(76, 107, 76);
+  padding: 10px;
+  border-radius: 10px 30px;
+  background-color: rgb(26, 32, 26);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background: linear-gradient(25deg, #ccc 5%, transparent 10%);
+}
+
+.crousal-1 {
+  width: 48%;
+}
+.crousal-2 {
+  width: 48%;
+}
+.main-project {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px;
+}
+.discription {
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #222222;;
+ padding: 20px;
+}
+
+.btn-all a button {
+  padding: 6px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(230, 54, 54);
+  color: var(--light);
+  margin-right: 30px;
+}
+.discription h3 {
+  color: rgb(193, 197, 139);
+}
+
+/* media for projects */
+@media screen and (max-width:768px){
+.main-project {
+  display: grid;
+  grid-template-columns: repeat(1,1fr)
+}
+.crousal-1, .crousal-2 {
+  width: 100%;
+  margin: 0px 0px 50px 0px;
+}
+}
+
